@@ -2,6 +2,7 @@ module Mutations
   class CreateUser < BaseMutation
     # often we will need input types for specific mutation
     # in those cases we can define those input types in the mutation class itself
+    # optionnal can be deleted this types(AuthProviderSignupData) and after delete credential
     class AuthProviderSignupData < Types::BaseInputObject
       argument :credentials, Types::AuthProviderCredentialsInput, required: false
     end
