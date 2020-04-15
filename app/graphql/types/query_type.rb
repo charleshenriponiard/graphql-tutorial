@@ -5,5 +5,6 @@ module Types
 
     # TODO: remove me
     field :all_links, resolver: Resolvers::LinksSearch
+    
   end
 end
