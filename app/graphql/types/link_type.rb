@@ -9,5 +9,6 @@ module Types
     # "method" option remaps field to an attribute of Link model
 
     field :posted_by, Types::UserType, null: true, method: :user
+    field :votes, [Types::VoteType], null: false
   end
 end
